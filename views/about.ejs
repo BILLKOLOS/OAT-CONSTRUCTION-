@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> | OAT LIMITED</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>About OAT LIMITED</h1>
+        <p>Building Africa's future with excellence and innovation</p>
+      </div>
+    </section>
+    
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Our Story</h2>
+            <p>Founded in 2015, OAT LIMITED began with a vision to transform Africa's construction landscape through innovative engineering solutions and sustainable building practices.</p>
+            <p>What started as a small team of passionate engineers and architects has grown into a leading construction and engineering firm serving clients across the continent and beyond.</p>
+            
+            <h2>Our Mission</h2>
+            <p>To deliver cutting-edge infrastructure solutions that contribute to Africa's urban development while maintaining the highest standards of quality, sustainability, and innovation.</p>
+            
+            <h2>Our Values</h2>
+            <ul class="values-list">
+              <li><strong>Excellence:</strong> We commit to the highest standards in everything we do.</li>
+              <li><strong>Innovation:</strong> We constantly seek better, smarter solutions to construction challenges.</li>
+              <li><strong>Sustainability:</strong> We design with the future in mind, minimizing environmental impact.</li>
+              <li><strong>Integrity:</strong> We maintain transparency and honesty in all our dealings.</li>
+              <li><strong>Collaboration:</strong> We believe in the power of teamwork and partnerships.</li>
+            </ul>
+          </div>
+          <div class="about-image" style="background-image: url('/api/placeholder/500/400'); background-size: cover;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <h2>Our Leadership Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-image" style="background-image: url('/api/placeholder/300/300'); background-size: cover;"></div>
+            <h3>Oluwaseun Adeyemi</h3>
+            <p class="member-title">Founder & CEO</p>
+            <p>With over 20 years of experience in civil engineering and construction management, Oluwaseun leads our company with vision and expertise.</p>
+          </div>
+          <div class="team-member">
+            <div class="member-image" style="background-image: url('/api/placeholder/300/300'); background-size: cover;"></div>
+            <h3>Taiwo Oluwatosin</h3>
+            <p class="member-title">Chief Operations Officer</p>
+            <p>Taiwo oversees all operational aspects of our projects, ensuring efficient execution and quality delivery.</p>
+          </div>
+          <div class="team-member">
+            <div class="member-image" style="background-image: url('/api/placeholder/300/300'); background-size: cover;"></div>
+            <h3>Amara Nwachukwu</h3>
+            <p class="member-title">Head of Engineering</p>
+            <p>A structural engineering expert, Amara leads our engineering team in developing innovative solutions for complex projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <div class="container">
+        <h2>Our Certifications & Partnerships</h2>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <i class="fas fa-certificate"></i>
+            <h4>ISO 9001:2015</h4>
+            <p>Quality Management Systems</p>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-leaf"></i>
+            <h4>LEED Accredited</h4>
+            <p>Leadership in Energy and Environmental Design</p>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-shield-alt"></i>
+            <h4>ISO 45001</h4>
+            <p>Occupational Health and Safety</p>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-globe"></i>
+            <h4>African Construction Partnership</h4>
+            <p>Continental Building Standards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <%- include('partials/footer') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>

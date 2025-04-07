@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> | OAT CONSTRUCTIONS LIMITED</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  
+  <main>
+    <section class="hero" style="background-image: url('/images/background.jpg'); background-size: cover;">
+      <div class="container">
+        <h1>Innovative Solutions for Modern Construction</h1>
+        <p>Building Africa's future with excellence, innovation, and sustainable practices.</p>
+        <a href="/services" class="btn">Our Services</a>
+      </div>
+    </section>
+    
+    <section class="featured">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <div class="project">
+            <div class="project-img" style="background-image: url('/images/project1.jpg'); background-size: cover;"></div>
+            <h3>Eco-Friendly Office Complex</h3>
+            <p>A LEED-certified commercial building with integrated smart technologies and sustainable materials.</p>
+            <a href="/portfolio" class="btn-small">View Project</a>
+          </div>
+          <div class="project">
+            <div class="project-img" style="background-image: url('/images/project2.jpg'); background-size: cover;"></div>
+            <h3>Urban Residential Tower</h3>
+            <p>A 20-story residential complex featuring modern amenities and energy-efficient systems.</p>
+            <a href="/portfolio" class="btn-small">View Project</a>
+          </div>
+          <div class="project">
+            <div class="project-img" style="background-image: url('/images/project3.jpg'); background-size: cover;"></div>
+            <h3>Community Healthcare Center</h3>
+            <p>A state-of-the-art healthcare facility designed for accessibility and efficiency.</p>
+            <a href="/portfolio" class="btn-small">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <i class="fas fa-building"></i>
+            <h3>150+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <h3>80+</h3>
+            <p>Expert Team Members</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-award"></i>
+            <h3>25+</h3>
+            <p>Industry Awards</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-globe-africa"></i>
+            <h3>12</h3>
+            <p>Countries Served</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Build Your Vision?</h2>
+        <p>Let's collaborate on your next construction or engineering project.</p>
+        <a href="/contact" class="btn">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+  
+  <%- include('partials/footer') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>

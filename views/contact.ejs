@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> | OAT LIMITED</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Connect with our team for your construction and engineering needs</p>
+      </div>
+    </section>
+    
+    <section class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="service">Service of Interest</label>
+                <select id="service" name="service">
+                  <option value="">-- Select a Service --</option>
+                  <option value="building">Building Construction</option>
+                  <option value="engineering">Engineering Solutions</option>
+                  <option value="project">Project Management</option>
+                  <option value="green">Green Building Consulting</option>
+                  <option value="renovation">Renovations & Restorations</option>
+                  <option value="smart">Smart Infrastructure & IoT</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Project Details</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn">Submit Inquiry</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span class="info-label">Email:</span>
+              <span class="info-value">info@oatltd.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <span class="info-label">Phone:</span>
+              <span class="info-value">+234 901 234 5678</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="info-label">Address:</span>
+              <span class="info-value">15 Unity Road<br>Victoria Island<br>Lagos, Nigeria</span>
+            </div>
+            
+            <div class="social-media">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            
+            <div class="office-hours">
+              <h3>Office Hours</h3>
+              <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+              <p>Saturday: 9:00 AM - 1:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container">
+        <h2>Our Location</h2>
+        <div class="map-container">
+          <!-- In a real implementation, this would be a Google Maps or similar embed -->
+          <div class="map-placeholder" style="background-color: #e9e9e9; height: 400px; display: flex; justify-content: center; align-items: center;">
+            <p>Map location of OAT LIMITED offices would be displayed here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <%- include('partials/footer') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> | OAT LIMITED</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Projects</h1>
+        <p>Showcasing excellence in construction and engineering</p>
+      </div>
+    </section>
+
+    <section class="portfolio-filter">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="residential">Residential</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+          <button class="filter-btn" data-filter="renovation">Renovation</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="commercial">
+            <div class="portfolio-img" style="background-image: url('/images/eco_office.jpg'); background-size: cover;"></div>
+            <h3>Eco-Friendly Office Complex</h3>
+            <p>Commercial | Lagos, Nigeria</p>
+          </div>
+          <div class="portfolio-item" data-category="residential">
+            <div class="portfolio-img" style="background-image: url('/images/residential_tower.jpg'); background-size: cover;"></div>
+            <h3>Urban Residential Tower</h3>
+            <p>Residential | Nairobi, Kenya</p>
+          </div>
+          <div class="portfolio-item" data-category="commercial">
+            <div class="portfolio-img" style="background-image: url('/images/healthcare_center.jpg'); background-size: cover;"></div>
+            <h3>Community Healthcare Center</h3>
+            <p>Healthcare | Accra, Ghana</p>
+          </div>
+          <div class="portfolio-item" data-category="infrastructure">
+            <div class="portfolio-img" style="background-image: url('/images/smart_city.jpg'); background-size: cover;"></div>
+            <h3>Smart City Infrastructure</h3>
+            <p>Infrastructure | Kigali, Rwanda</p>
+          </div>
+          <div class="portfolio-item" data-category="renovation">
+            <div class="portfolio-img" style="background-image: url('/images/historic_restoration.jpg'); background-size: cover;"></div>
+            <h3>Historic Building Restoration</h3>
+            <p>Renovation | Cape Town, South Africa</p>
+          </div>
+          <div class="portfolio-item" data-category="residential">
+            <div class="portfolio-img" style="background-image: url('/images/luxury_villa.jpg'); background-size: cover;"></div>
+            <h3>Luxury Villa Development</h3>
+            <p>Residential | Dakar, Senegal</p>
+          </div>
+          <div class="portfolio-item" data-category="commercial">
+            <div class="portfolio-img" style="background-image: url('/images/shopping_mall.jpg'); background-size: cover;"></div>
+            <h3>Shopping Mall Complex</h3>
+            <p>Commercial | Cairo, Egypt</p>
+          </div>
+          <div class="portfolio-item" data-category="infrastructure">
+            <div class="portfolio-img" style="background-image: url('/images/solar_power.jpg'); background-size: cover;"></div>
+            <h3>Solar Power Installation</h3>
+            <p>Infrastructure | Kampala, Uganda</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Client Testimonials</h2>
+        <div class="testimonials-slider">
+          <div class="testimonial active">
+            <p>"OAT LIMITED transformed our vision into reality with their innovative approach and attention to detail. Their team's expertise in sustainable building practices helped us achieve LEED certification."</p>
+            <div class="testimonial-author">
+              <span class="name">- Dr. Nkosi Mandela</span>
+              <span class="company">CEO, GreenTech Enterprises</span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"Working with OAT LIMITED on our hospital renovation project was a seamless experience. Their understanding of healthcare facility requirements and ability to work without disrupting operations was impressive."</p>
+            <div class="testimonial-author">
+              <span class="name">- Dr. Amina Diop</span>
+              <span class="company">Director, Central Medical Center</span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"The smart infrastructure solutions implemented by OAT LIMITED in our office building have significantly reduced operational costs and improved efficiency. Their IoT integration is truly next-level."</p>
+            <div class="testimonial-author">
+              <span class="name">- Samuel Osei</span>
+              <span class="company">Facilities Manager, Tech Park</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <%- include('partials/footer') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>
