@@ -138,12 +138,21 @@ header .container {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+  color: var(--light-color);
+  font-weight: 700;
+  margin: 50px 0;
+  line-height: 1.2;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
   max-width: 600px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+  color: var(--light-color);
+  font-weight: 600;
+  line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
 }
@@ -177,7 +186,7 @@ header .container {
 }
 
 .project-img {
-  height: 200px;
+  height: 280px;
   background-color: #ddd;
 }
 
